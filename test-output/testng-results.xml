@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="2" total="3" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="62433" started-at="2023-02-03T07:37:20Z" finished-at="2023-02-03T07:38:22Z">
+    <groups>
+    </groups>
+    <test name="Attendance Test" duration-ms="62433" started-at="2023-02-03T07:37:20Z" finished-at="2023-02-03T07:38:22Z">
+      <class name="com.mwbtech.PagarPlusApp.AttendanceScreenTest">
+        <test-method status="PASS" signature="AttendaanceWithLocalVisitAndWholeDay()[pri:0, instance:com.mwbtech.PagarPlusApp.AttendanceScreenTest@7c7b252e]" name="AttendaanceWithLocalVisitAndWholeDay" duration-ms="62409" started-at="2023-02-03T07:37:20Z" finished-at="2023-02-03T07:38:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AttendaanceWithLocalVisitAndWholeDay -->
+      </class> <!-- com.mwbtech.PagarPlusApp.AttendanceScreenTest -->
+    </test> <!-- Attendance Test -->
+  </suite> <!-- Suite -->
+</testng-results>

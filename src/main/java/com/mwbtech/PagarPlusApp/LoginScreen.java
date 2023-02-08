@@ -132,5 +132,6 @@ public class LoginScreen extends AndroidActions {
 	public void selectEnglishLangBtn() {
 		englishLangSelectBtn.click();
 	}
+	
 
 }

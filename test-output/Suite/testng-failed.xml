@@ -8,9 +8,10 @@
     <classes>
       <class name="com.mwbtech.PagarPlusApp.AttendanceScreenTest">
         <methods>
-          <include name="AttendaanceWithBranchVisitAndFirstHalf"/>
           <include name="AttendaanceWithOutstationVisitAndSecondHalf"/>
           <include name="AttendaanceWithLocalVisitAndWholeDay"/>
+          <include name="AfterTest"/>
+          <include name="BeforeTest"/>
         </methods>
       </class> <!-- com.mwbtech.PagarPlusApp.AttendanceScreenTest -->
     </classes>

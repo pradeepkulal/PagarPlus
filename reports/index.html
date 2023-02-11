@@ -51,12 +51,12 @@
         <ul class="nav-right">
           <li class="m-r-10">
             <a href="#">
-              <span class="badge badge-primary">Mobile Automation Results-Jama Kharch</span>
+              <span class="badge badge-primary">Mobile Automation Results-Pagar Plus</span>
             </a>
           </li>
             <li class="m-r-10">
                 <a href="#">
-                    <span class="badge badge-primary">Feb 8, 2023 06:23:39 PM</span>
+                    <span class="badge badge-primary">Feb 10, 2023 12:59:47 PM</span>
                 </a>
             </li>
         </ul>
@@ -131,19 +131,19 @@
 					</div>
 					<div class="open-test">
 						<div class="test-detail">
-							<p class="name">AttendaanceWithBranchVisitAndFirstHalf</p>
-							<p class="duration text-sm">0h 0m 43s+680ms</p>
-							<span class="datetime">18:23:39 PM</span>
+							<p class="name">AttendaanceWithLocalVisitAndWholeDay</p>
+							<p class="duration text-sm">0h 0m 33s+419ms</p>
+							<span class="datetime">13:00:28 PM</span>
 						</div>
 					</div>
 					<div class="test-contents d-none">
 						<div class="detail-head">
 							<div class="p-v-10 d-inline-block">
 								<div class="info">
-									<h5 class="test-status text-fail">AttendaanceWithBranchVisitAndFirstHalf</h5>
-									<span class='badge badge-success'>02.08.2023 18:23:39</span>
-									<span class='badge badge-danger'>02.08.2023 18:24:23</span>
-									<span class='badge badge-default'>0h 0m 43s+680ms</span>
+									<h5 class="test-status text-fail">AttendaanceWithLocalVisitAndWholeDay</h5>
+									<span class='badge badge-success'>02.10.2023 13:00:28</span>
+									<span class='badge badge-danger'>02.10.2023 13:01:01</span>
+									<span class='badge badge-default'>0h 0m 33s+419ms</span>
 								</div>
 								<div class="m-t-10 m-l-5">
 									
@@ -160,33 +160,14 @@
 	<tbody>
 			<tr class="event-row">
 				<td><i class="fa fa-times text-fail"></i></td>
-				<td>6:24:23 PM</td>
+				<td>1:01:01 PM</td>
 				<td>
-						<textarea disabled class="code-block">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: 'Command 'C:\\Users\\Admin\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s R58N345JQXY shell 'settings delete global hidden_api_policy_pre_p_apps;settings delete global hidden_api_policy_p_apps;settings delete global hidden_api_policy'' exited with code 1'; Command output: adb.exe: device 'R58N345JQXY' not found
- 
-Host info: host: 'LAPTOP-N1QJ0PMG', ip: '192.168.1.7'
-Build info: version: '4.8.0', revision: '267030adea'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [null, newSession {capabilities=[{appium:noReset=true, appium:udid=R58N345JQXY, platformName=ANDROID, appium:automationName=UIAutomator2}], desiredCapabilities=Capabilities {appium:automationName: UIAutomator2, appium:noReset: true, appium:udid: R58N345JQXY, platformName: ANDROID}}]
-Capabilities {}
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:148)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:133)
-	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
-	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:194)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:229)
-	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:157)
-	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:80)
-	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:92)
-	at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:117)
-	at com.mwbtech.PagarPlusApp.BaseTest.ConfigureAppium(BaseTest.java:45)
-	at com.mwbtech.PagarPlusApp.AttendanceScreenTest.AttendaanceWithBranchVisitAndFirstHalf(AttendanceScreenTest.java:8)
+						<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.xpath: //android.widget.TextView[@text='First Half']})
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:125)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+	at org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4.click(<generated>)
+	at com.mwbtech.PagarPlusApp.AttendanceScreen.selectAttendanceType(AttendanceScreen.java:129)
+	at com.mwbtech.PagarPlusApp.AttendanceScreenTest.AttendaanceWithLocalVisitAndWholeDay(AttendanceScreenTest.java:45)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -212,19 +193,101 @@ Capabilities {}
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@5215cd9a (tried for 1 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:263)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:98)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:118)
+	... 29 more
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.xpath: //android.widget.TextView[@text='First Half']})
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.0', revision: '267030adea'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: driver.version: RemoteWebDriver
+	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:77)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$1.findElement(ElementLocation.java:136)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$1.findElement(ElementLocation.java:136)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$findElement$0(AppiumElementLocator.java:119)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:171)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:164)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	... 31 more
 </textarea>
 				</td>
 			</tr>
+	</tbody>
+</table>
+</div>
+<div class="detail-foot">
+	<ul class="attachments">
+		<li>
+			<a href="#" data-featherlight="image">
+				<img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\Admin\eclipse-workspace\PagarPlusTesting//reports//screenshots//AttendaanceWithLocalVisitAndWholeDay.png' src='C:\Users\Admin\eclipse-workspace\PagarPlusTesting//reports//screenshots//AttendaanceWithLocalVisitAndWholeDay.png'>
+			</a>
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="fail" test-id="2"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar fail-bg">
+						<i class="fa fa-times text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">AttendaanceWithOutstationVisitAndSecondHalf</p>
+							<p class="duration text-sm">0h 0m 29s+619ms</p>
+							<span class="datetime">13:01:26 PM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-fail">AttendaanceWithOutstationVisitAndSecondHalf</h5>
+									<span class='badge badge-success'>02.10.2023 13:01:26</span>
+									<span class='badge badge-danger'>02.10.2023 13:01:55</span>
+									<span class='badge badge-default'>0h 0m 29s+619ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
 			<tr class="event-row">
 				<td><i class="fa fa-times text-fail"></i></td>
-				<td>6:24:23 PM</td>
+				<td>1:01:55 PM</td>
 				<td>
-						<textarea disabled class="code-block">java.lang.NullPointerException
-	at com.wbtech.PagarPlus.utils.AppiumUtils.getScreenShotPath(AppiumUtils.java:29)
-	at com.mwbtech.PagarPlusApp.TestUtils.Listeners.onTestFailure(Listeners.java:47)
-	at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:67)
-	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1389)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:636)
+						<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.xpath: //android.widget.TextView[@text='Suraj Groups Visit']})
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:125)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+	at org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4.click(<generated>)
+	at com.mwbtech.PagarPlusApp.AttendanceScreen.selectAttendanceType(AttendanceScreen.java:121)
+	at com.mwbtech.PagarPlusApp.AttendanceScreenTest.AttendaanceWithOutstationVisitAndSecondHalf(AttendanceScreenTest.java:63)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
 	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
@@ -244,11 +307,46 @@ Capabilities {}
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@4bf324f9 (tried for 1 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:263)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:98)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:118)
+	... 29 more
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.xpath: //android.widget.TextView[@text='Suraj Groups Visit']})
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.0', revision: '267030adea'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: driver.version: RemoteWebDriver
+	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:77)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$1.findElement(ElementLocation.java:136)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$1.findElement(ElementLocation.java:136)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$findElement$0(AppiumElementLocator.java:119)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:171)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:164)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	... 31 more
 </textarea>
 				</td>
 			</tr>
 	</tbody>
 </table>
+</div>
+<div class="detail-foot">
+	<ul class="attachments">
+		<li>
+			<a href="#" data-featherlight="image">
+				<img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\Admin\eclipse-workspace\PagarPlusTesting//reports//screenshots//AttendaanceWithOutstationVisitAndSecondHalf.png' src='C:\Users\Admin\eclipse-workspace\PagarPlusTesting//reports//screenshots//AttendaanceWithOutstationVisitAndSecondHalf.png'>
+			</a>
+		</li>
+	</ul>
 </div>
 					</div>
 				</li>
@@ -282,7 +380,7 @@ Capabilities {}
 			<ul class="tools text-right">
 				<li>
 					<a href="#">
-					<span class="badge badge-primary">2</span>
+					<span class="badge badge-primary">1</span>
 					</a>
 				</li>
 			</ul>
@@ -292,13 +390,13 @@ Capabilities {}
 				<li class="test-item">
 					<div class="open-test">
 						<div class="test-detail">
-							<p class="name">org.openqa.selenium.SessionNotCreatedException</p>
-							<p class="duration text-sm">1 tests</p>
+							<p class="name">org.openqa.selenium.NoSuchElementException</p>
+							<p class="duration text-sm">2 tests</p>
 						</div>
 					</div>
 					<div class="test-contents d-none">
 						<div class="info">
-							<h4>org.openqa.selenium.SessionNotCreatedException</h4>
+							<h4>org.openqa.selenium.NoSuchElementException</h4>
 						</div>
 						<table class='table table-sm mt-4'>
 							<thead>
@@ -315,44 +413,20 @@ Capabilities {}
 											<i class="fa fa-times text-white"></i>
 										</div>
 									</td>
-									<td>18:23:39 PM</td>
+									<td>13:00:28 PM</td>
 									<td class='linked' test-id='1'>
-										AttendaanceWithBranchVisitAndFirstHalf
+										AttendaanceWithLocalVisitAndWholeDay
 									</td>
 								</tr>
-							</tbody>
-						</table>
-					</div>
-				</li>
-				<li class="test-item">
-					<div class="open-test">
-						<div class="test-detail">
-							<p class="name">java.lang.NullPointerException</p>
-							<p class="duration text-sm">1 tests</p>
-						</div>
-					</div>
-					<div class="test-contents d-none">
-						<div class="info">
-							<h4>java.lang.NullPointerException</h4>
-						</div>
-						<table class='table table-sm mt-4'>
-							<thead>
-								<tr>
-									<th class="status-col">Status</th>
-									<th class="timestamp-col">Timestamp</th>
-									<th>TestName</th>
-								</tr>
-							</thead>
-							<tbody>
 								<tr>
 									<td>
 										<div class='status-avatar fail-bg'>
 											<i class="fa fa-times text-white"></i>
 										</div>
 									</td>
-									<td>18:23:39 PM</td>
-									<td class='linked' test-id='1'>
-										AttendaanceWithBranchVisitAndFirstHalf
+									<td>13:01:26 PM</td>
+									<td class='linked' test-id='2'>
+										AttendaanceWithOutstationVisitAndSecondHalf
 									</td>
 								</tr>
 							</tbody>
@@ -395,7 +469,7 @@ Capabilities {}
 						</small>
 					</div>
 					<div>
-						<small data-tooltip='100%'><b>1</b> tests failed, 
+						<small data-tooltip='100%'><b>2</b> tests failed, 
 						<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 						</small>
 					</div>
@@ -430,7 +504,7 @@ Capabilities {}
 					<div class="media justify-content-between">
 						<div class="card-header">
 							<h6 class="card-title">Tests</h6>
-							<h2 class="font-size-28 font-weight-light mt-3">1</h2>
+							<h2 class="font-size-28 font-weight-light mt-3">2</h2>
 							<span class="text-semibold text-success font-size-15">
 							<i class="ti-arrow-up font-size-11"></i> 
 							<span>.00%</span>
@@ -449,7 +523,7 @@ Capabilities {}
 					<div class="media justify-content-between">
 						<div class="card-header">
 							<h6 class="card-title">Start</h6>
-							<h4 class="font-weight-light mt-4">Feb 8, 2023 06:23:39 PM</h4>
+							<h4 class="font-weight-light mt-4">Feb 10, 2023 12:59:47 PM</h4>
 							<span class="text-semibold text-success font-size-15">
 						</div>
 						<div class="align-self-end">
@@ -465,7 +539,7 @@ Capabilities {}
 					<div class="media justify-content-between">
 						<div class="card-header">
 							<h6 class="card-title">Duration</h6>
-							<h4 class="font-weight-light mt-4">0h 0m 44s+190ms</h4>
+							<h4 class="font-weight-light mt-4">0h 2m 8s+899ms</h4>
 							<span class="text-semibold font-size-15">
 						</div>
 						<div class="align-self-end">
@@ -509,6 +583,10 @@ Capabilities {}
 								<td>Tester</td>
 								<td>Pradeep Kulal</td>
 							</tr>
+							<tr>
+								<td>Platform Name</td>
+								<td>Android 13.0</td>
+							</tr>
 						</tbody>
 					</table>
 				</div>
@@ -518,14 +596,14 @@ Capabilities {}
 </div>
 <script>
 	var statusGroup = {
-	    parentCount: 1,
+	    parentCount: 2,
 		passParent: 0,
-		failParent: 1,
+		failParent: 2,
 		fatalParent: 0,
 		errorParent: 0,
 		warningParent: 0,
 		skipParent: 0,
-		exceptionsParent: 1,
+		exceptionsParent: 2,
 		childCount: 0,
 		passChild: 0,
 		failChild: 0,
@@ -560,7 +638,7 @@ Capabilities {}
 </script>
 <script>
 	var timeline = {
-	        "AttendaanceWithBranchVisitAndFirstHalf":43.68
+	        "AttendaanceWithLocalVisitAndWholeDay":33.419,"AttendaanceWithOutstationVisitAndSecondHalf":29.619
 	};
 </script>
                 </div>

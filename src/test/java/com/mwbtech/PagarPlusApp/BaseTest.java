@@ -19,14 +19,9 @@ import io.appium.java_client.service.local.AppiumDriverLocalService;
 
 public class BaseTest {
 	public AndroidDriver driver;
-
-	// to start the Appium Server
-	public void ConfigureAppium() throws MalformedURLException, InterruptedException {
+	public void startAppiumServer() {
 		AppiumDriverLocalService service = AppiumDriverLocalService.buildDefaultService();
-
 		service.start();
-		String s =  service.getBasePath();
-		System.out.println(s);
 		String host = "localhost";
 	      int port = 4723;
 	      try (Socket socket = new Socket(host, port)) {
@@ -34,6 +29,11 @@ public class BaseTest {
 	      } catch (Exception e) {
 	         System.out.println("Mobile device is not connected to port " + port);
 	      }
+	}
+
+	// to start the Appium Server
+	public void ConfigureAppium() throws MalformedURLException, InterruptedException {
+	
 
 		// Launch the app in Mobile/Emulator
 		UiAutomator2Options opt = new UiAutomator2Options();
@@ -49,7 +49,7 @@ public class BaseTest {
 	}
 
 	public void tearDown() {
-		driver.close();
+		driver.quit();
 
 	}
 
@@ -65,17 +65,8 @@ public class BaseTest {
 	}
 
 	public static void doLogout(AndroidDriver driver) {
-//		try {
-//			driver.findElement(By.id("com.pagarplus.app:id/imageMenu")).click();
-//			driver.findElement(By.id("com.pagarplus.app:id/txtLogout")).click();
-//			driver.findElement(By.id("android:id/button1")).click();
-//		} catch (Exception e) {
-//			//driver.findElement(By.id("com.pagarplus.app:id/imageMenu")).click();
-//			driver.findElement(By.id("com.pagarplus.app:id/txtLogout")).click();
-//			driver.findElement(By.id("android:id/button1")).click();		
-//			
-//		}
-		driver.findElement(By.id("com.pagarplus.app:id/txtLogout")).click();
+
+		driver.findElement(By.id("com.pagarplus.app:id/logOut")).click();
 		driver.findElement(By.id("android:id/button1")).click();
 		
 		

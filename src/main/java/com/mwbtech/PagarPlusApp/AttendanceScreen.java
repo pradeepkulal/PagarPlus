@@ -22,7 +22,7 @@ public class AttendanceScreen extends AndroidActions {
 	}
 
 // Locate all the elements in Attendance screen
-	@AndroidFindBy(id = "com.pagarplus.app:id/txtAttendance")
+	@AndroidFindBy(id = "com.pagarplus.app:id/btnMyAttendance")
 	private WebElement myAttendanceBtn;
 	
 	@AndroidFindBy(xpath = "//android.widget.TextView[@text='Suraj Groups Visit']")
@@ -66,9 +66,10 @@ public class AttendanceScreen extends AndroidActions {
 	private WebElement sideMenuBtn;
 	@AndroidFindBy(id = "com.pagarplus.app:id/txtFirmName")
 	private WebElement firmName;
-	@AndroidFindBy(xpath = ("(//android.widget.FrameLayout)[1]"))
+	@AndroidFindBy(id = "com.pagarplus.app:id/snackbar_text")
 	private WebElement toastMsg;
-	
+	@AndroidFindBy(id = "com.pagarplus.app:id/txtUserName")
+	private WebElement userName;
 	// xpath of element //element_tag[@attribute_name='attribute_value']
 
 	
@@ -77,15 +78,15 @@ public class AttendanceScreen extends AndroidActions {
 	public void clickAttendanceBtn() {
 		myAttendanceBtn.click();
 	}
-	public void selectAttendanceType(String visitType, String attendanceType, String branchName,AndroidDriver driver) {
-		if (visitType.equalsIgnoreCase(branchName+" Visit")  && attendanceType.equalsIgnoreCase("Whole day")) {
+	public void selectAttendanceType(String visitType, String attendanceType,AndroidDriver driver) {
+		if (visitType.equalsIgnoreCase("Branch Visit")  && attendanceType.equalsIgnoreCase("Whole day")) {
 			System.out.println("Default is selected");
 		}
-		else if (visitType.equalsIgnoreCase(branchName+" Visit")  && attendanceType.equalsIgnoreCase("Second Half")) {
+		else if (visitType.equalsIgnoreCase("Branch Visit")  && attendanceType.equalsIgnoreCase("Second Half")) {
 			wholeDaybtn.click();
 			secondHalfbtn.click();
 		}
-		else if (visitType.equalsIgnoreCase(branchName+" Visit")  && attendanceType.equalsIgnoreCase("First Half")) {
+		else if (visitType.equalsIgnoreCase("Branch Visit")  && attendanceType.equalsIgnoreCase("First Half")) {
 			wholeDaybtn.click();
 			firstHalfbtn.click();
 		
@@ -117,7 +118,6 @@ public class AttendanceScreen extends AndroidActions {
 		}
 		else if (visitType.equalsIgnoreCase("Outstation Visit")  && attendanceType.equalsIgnoreCase("Second Half")) {
 			clickOnScreen(driver, 370, 270);
-			branchVisitbtn.click();
 			outstationVisitbtn.click();
 			wholeDaybtn.click();
 			secondHalfbtn.click();
@@ -156,6 +156,9 @@ public class AttendanceScreen extends AndroidActions {
 	}
 	public String getToastText() {
 		return toastMsg.getText();
+	}
+	public String getUserName() {
+		return userName.getText();
 	}
 	
 

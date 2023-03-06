@@ -4,16 +4,16 @@
   <listeners>
     <listener class-name="com.mwbtech.PagarPlusApp.TestUtils.Listeners"/>
   </listeners>
-  <test thread-count="5" name="Attendance Test(failed)">
+  <test thread-count="5" name="Create Employee  Test(failed)">
     <classes>
-      <class name="com.mwbtech.PagarPlusApp.AttendanceScreenTest">
+      <class name="com.mwbtech.PagarPlusApp.CreateNewEmployeeScreenTest">
         <methods>
-          <include name="AttendaanceWithOutstationVisitAndSecondHalf"/>
-          <include name="AttendaanceWithLocalVisitAndWholeDay"/>
-          <include name="AfterTest"/>
-          <include name="BeforeTest"/>
+          <include name="BeforeClass"/>
+          <include name="afterMethod"/>
+          <include name="createEmployeePositiveScenario"/>
+          <include name="beforeMethod"/>
         </methods>
-      </class> <!-- com.mwbtech.PagarPlusApp.AttendanceScreenTest -->
+      </class> <!-- com.mwbtech.PagarPlusApp.CreateNewEmployeeScreenTest -->
     </classes>
-  </test> <!-- Attendance Test(failed) -->
+  </test> <!-- Create Employee  Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

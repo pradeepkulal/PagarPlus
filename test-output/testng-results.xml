@@ -1,167 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="2" ignored="1" total="3" passed="0">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="128301" started-at="2023-02-10T07:29:48Z" finished-at="2023-02-10T07:31:56Z">
+  <suite name="Suite" duration-ms="81039" started-at="2023-02-28T13:07:03Z" finished-at="2023-02-28T13:08:24Z">
     <groups>
     </groups>
-    <test name="Attendance Test" duration-ms="128301" started-at="2023-02-10T07:29:48Z" finished-at="2023-02-10T07:31:56Z">
-      <class name="com.mwbtech.PagarPlusApp.AttendanceScreenTest">
-        <test-method status="PASS" signature="BeforeTest()[pri:0, instance:com.mwbtech.PagarPlusApp.AttendanceScreenTest@5656be13]" name="BeforeTest" is-config="true" duration-ms="40135" started-at="2023-02-10T07:29:48Z" finished-at="2023-02-10T07:30:28Z">
+    <test name="Create Employee  Test" duration-ms="81039" started-at="2023-02-28T13:07:03Z" finished-at="2023-02-28T13:08:24Z">
+      <class name="com.mwbtech.PagarPlusApp.CreateNewEmployeeScreenTest">
+        <test-method status="PASS" signature="BeforeClass()[pri:0, instance:com.mwbtech.PagarPlusApp.CreateNewEmployeeScreenTest@4218d6a3]" name="BeforeClass" is-config="true" duration-ms="3479" started-at="2023-02-28T13:07:03Z" finished-at="2023-02-28T13:07:06Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- BeforeTest -->
-        <test-method status="FAIL" signature="AttendaanceWithLocalVisitAndWholeDay()[pri:1, instance:com.mwbtech.PagarPlusApp.AttendanceScreenTest@5656be13]" name="AttendaanceWithLocalVisitAndWholeDay" duration-ms="33412" started-at="2023-02-10T07:30:28Z" finished-at="2023-02-10T07:31:01Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[Can't locate an element by this strategy: By.chained({By.xpath: //android.widget.TextView[@text='First Half']})]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.xpath: //android.widget.TextView[@text='First Half']})
-at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:125)
-at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
-at org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4.click(<generated>)
-at com.mwbtech.PagarPlusApp.AttendanceScreen.selectAttendanceType(AttendanceScreen.java:129)
-at com.mwbtech.PagarPlusApp.AttendanceScreenTest.AttendaanceWithLocalVisitAndWholeDay(AttendanceScreenTest.java:45)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@5215cd9a (tried for 1 second(s) with 500 milliseconds interval)
-at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:263)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:98)
-at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:118)
-... 29 more
-Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.xpath: //android.widget.TextView[@text='First Half']})
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.8.0', revision: '267030adea'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
-Driver info: driver.version: RemoteWebDriver
-at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:77)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$1.findElement(ElementLocation.java:136)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$1.findElement(ElementLocation.java:136)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$findElement$0(AppiumElementLocator.java:119)
-at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:171)
-at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:164)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
-... 31 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        </test-method> <!-- BeforeClass -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.mwbtech.PagarPlusApp.CreateNewEmployeeScreenTest@4218d6a3]" name="beforeMethod" is-config="true" duration-ms="18000" started-at="2023-02-28T13:07:06Z" finished-at="2023-02-28T13:07:24Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- AttendaanceWithLocalVisitAndWholeDay -->
-        <test-method status="PASS" signature="AfterTest()[pri:0, instance:com.mwbtech.PagarPlusApp.AttendanceScreenTest@5656be13]" name="AfterTest" is-config="true" duration-ms="664" started-at="2023-02-10T07:31:02Z" finished-at="2023-02-10T07:31:03Z">
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="createEmployeePositiveScenario()[pri:0, instance:com.mwbtech.PagarPlusApp.CreateNewEmployeeScreenTest@4218d6a3]" name="createEmployeePositiveScenario" duration-ms="58862" started-at="2023-02-28T13:07:24Z" finished-at="2023-02-28T13:08:23Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- AfterTest -->
-        <test-method status="PASS" signature="BeforeTest()[pri:0, instance:com.mwbtech.PagarPlusApp.AttendanceScreenTest@5656be13]" name="BeforeTest" is-config="true" duration-ms="23151" started-at="2023-02-10T07:31:03Z" finished-at="2023-02-10T07:31:26Z">
+        </test-method> <!-- createEmployeePositiveScenario -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.mwbtech.PagarPlusApp.CreateNewEmployeeScreenTest@4218d6a3]" name="afterMethod" is-config="true" duration-ms="636" started-at="2023-02-28T13:08:23Z" finished-at="2023-02-28T13:08:24Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- BeforeTest -->
-        <test-method status="FAIL" signature="AttendaanceWithOutstationVisitAndSecondHalf()[pri:2, instance:com.mwbtech.PagarPlusApp.AttendanceScreenTest@5656be13]" name="AttendaanceWithOutstationVisitAndSecondHalf" duration-ms="29618" started-at="2023-02-10T07:31:26Z" finished-at="2023-02-10T07:31:55Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[Can't locate an element by this strategy: By.chained({By.xpath: //android.widget.TextView[@text='Suraj Groups Visit']})]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.xpath: //android.widget.TextView[@text='Suraj Groups Visit']})
-at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:125)
-at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
-at org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4.click(<generated>)
-at com.mwbtech.PagarPlusApp.AttendanceScreen.selectAttendanceType(AttendanceScreen.java:121)
-at com.mwbtech.PagarPlusApp.AttendanceScreenTest.AttendaanceWithOutstationVisitAndSecondHalf(AttendanceScreenTest.java:63)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@4bf324f9 (tried for 1 second(s) with 500 milliseconds interval)
-at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:263)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:98)
-at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:118)
-... 29 more
-Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.xpath: //android.widget.TextView[@text='Suraj Groups Visit']})
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.8.0', revision: '267030adea'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
-Driver info: driver.version: RemoteWebDriver
-at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:77)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$1.findElement(ElementLocation.java:136)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$1.findElement(ElementLocation.java:136)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$findElement$0(AppiumElementLocator.java:119)
-at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:171)
-at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:164)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
-... 31 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AttendaanceWithOutstationVisitAndSecondHalf -->
-        <test-method status="PASS" signature="AfterTest()[pri:0, instance:com.mwbtech.PagarPlusApp.AttendanceScreenTest@5656be13]" name="AfterTest" is-config="true" duration-ms="349" started-at="2023-02-10T07:31:56Z" finished-at="2023-02-10T07:31:56Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AfterTest -->
-      </class> <!-- com.mwbtech.PagarPlusApp.AttendanceScreenTest -->
-    </test> <!-- Attendance Test -->
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.mwbtech.PagarPlusApp.CreateNewEmployeeScreenTest -->
+    </test> <!-- Create Employee  Test -->
   </suite> <!-- Suite -->
 </testng-results>

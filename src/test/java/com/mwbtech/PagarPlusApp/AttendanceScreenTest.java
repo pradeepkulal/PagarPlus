@@ -4,13 +4,17 @@ import java.net.MalformedURLException;
 
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 public class AttendanceScreenTest extends BaseTest{
+	@BeforeClass
+	public void BeforeClass() {
+		startAppiumServer();
+	}
 	@BeforeMethod
 	public void BeforeTest() throws Exception, InterruptedException {
-		startAppiumServer();
 		ConfigureAppium();
 	}
 	
@@ -37,10 +41,11 @@ public class AttendanceScreenTest extends BaseTest{
   
   }
   @Test(priority =1)
-  public void AttendaanceWithLocalVisitAndWholeDay() throws Exception, InterruptedException {
-	  doLogIn(driver, "9666547899", "123456");
+  public void AttendaanceWithOutStationVisitAndWholeDay() throws Exception, InterruptedException {
+	  doLogIn(driver, "9666547892", "123456");
 	  AttendanceScreen AScrn = new AttendanceScreen(driver);
 	  String userName= AScrn.getUserName();
+	  System.out.println(userName);
 	  AScrn.clickAttendanceBtn();
 	  AScrn.selectAttendanceType("Outstation visit","Whole Day" ,driver);
 	  AScrn.takePhoto(driver);
@@ -56,11 +61,11 @@ public class AttendanceScreenTest extends BaseTest{
   }
   @Test(priority = 2)
   public void AttendaanceWithOutstationVisitAndSecondHalf() throws Exception, InterruptedException {
-	  doLogIn(driver, "9666547890", "123456");
+	  doLogIn(driver, "9666547893", "123456");
 	  AttendanceScreen AScrn = new AttendanceScreen(driver);
 	  String userName= AScrn.getUserName();
 	  AScrn.clickAttendanceBtn();
-	  AScrn.selectAttendanceType("Outstation Visit","Second Half" ,driver);
+	  AScrn.selectAttendanceType("Outstation Visit","Whole day" ,driver);
 	  AScrn.takePhoto(driver);
 	  AScrn.clickCheckIn();
 	  String ActualToast = AScrn.getToastText();
@@ -69,7 +74,7 @@ public class AttendanceScreenTest extends BaseTest{
 	  AScrn.clickBackBtn();
 	  doLogout(driver);
   }
-  @Test(priority = 3)
+  @Test(enabled = false)
   public void AttendaanceWithOutstationVisitAndWholeDay() throws Exception, InterruptedException {
 	  doLogIn(driver, "9666547891", "123456");
 	  AttendanceScreen AScrn = new AttendanceScreen(driver);

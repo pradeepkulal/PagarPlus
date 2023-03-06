@@ -5,9 +5,9 @@
 <listeners>
 <listener class-name="com.mwbtech.PagarPlusApp.TestUtils.Listeners"/>
 </listeners>
-  <test thread-count="5" name="Attendance Test">
+  <test thread-count="5" name="Create Employee  Test">
     <classes>
-      <class name="com.mwbtech.PagarPlusApp.AttendanceScreenTest"/>     
+      <class name="com.mwbtech.PagarPlusApp.CreateNewEmployeeScreenTest"/>     
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

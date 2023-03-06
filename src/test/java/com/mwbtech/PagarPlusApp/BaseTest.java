@@ -38,7 +38,7 @@ public class BaseTest {
 		// Launch the app in Mobile/Emulator
 		UiAutomator2Options opt = new UiAutomator2Options();
 		opt.setPlatformName("Android");
-		opt.setCapability("appium:udid", "R58N345JQXY"); // emulator= emulator-5554 Samsung=5200c6ce8da77687 c SamTab=R9AR70ZLHSE
+		opt.setCapability("appium:udid", "5200c6ce8da77687"); // emulator= emulator-5554 Samsung=5200c6ce8da77687 c SamTab=R9AR70ZLHSE
 		Activity act = new Activity("com.pagarplus.app", ".modules.splashscreen.ui.SplashActivity");
 		opt.setCapability(MobileCapabilityType.NO_RESET,"true");
 		URL remoteUrl = new URL("http://127.0.0.1:4723/");

@@ -1,9 +1,14 @@
 package com.mwbtech.PagarPlusApp;
 
+import java.time.Duration;
 import java.util.NoSuchElementException;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.google.common.collect.ImmutableMap;
 import com.wbtech.PagarPlus.utils.AndroidActions;
@@ -102,10 +107,12 @@ public class AttendanceScreen extends AndroidActions {
 			wholeDaybtn.click();
 			secondHalfbtn.click();
 		} 
-		else if(visitType.equalsIgnoreCase("Local Visit")  && attendanceType.equalsIgnoreCase("Whole Day")) {
+		else if(visitType.equalsIgnoreCase("Local Visit")  && attendanceType.equalsIgnoreCase("First day")) {
 			System.out.println("Local visit and Whole Day is selected");
 			clickOnScreen(driver, 370, 270);
 			localVisitbtn.click();
+			wholeDaybtn.click();
+			firstHalfbtn.click(); 
 			System.out.println("Local visit and Whole Day is selected");
 		}
 		else if	(visitType.equalsIgnoreCase("Outstation Visit")  && attendanceType.equalsIgnoreCase("First Half")) {
@@ -125,7 +132,6 @@ public class AttendanceScreen extends AndroidActions {
 		else if(visitType.equalsIgnoreCase("Outstation Visit")  && attendanceType.equalsIgnoreCase("Whole Day")) {
 			clickOnScreen(driver, 370, 270);
 			outstationVisitbtn.click();
-			firstHalfbtn.click();
 			wholeDaybtn.click();
 		}
 		else {
@@ -158,6 +164,9 @@ public class AttendanceScreen extends AndroidActions {
 		return toastMsg.getText();
 	}
 	public String getUserName() {
+		new WebDriverWait(driver, Duration.ofSeconds(10000)).ignoring(StaleElementReferenceException.class).
+		until(ExpectedConditions.visibilityOf(userName));
+		System.out.println(userName.isDisplayed()+" element displayed");
 		return userName.getText();
 	}
 	
